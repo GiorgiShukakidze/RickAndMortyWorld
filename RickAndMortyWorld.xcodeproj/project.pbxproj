@@ -7,19 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0205AC26D53A65006874B1 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0205AB26D53A65006874B1 /* SearchBarView.swift */; };
+		CB0205AF26D56A0C006874B1 /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0205AE26D56A0C006874B1 /* ViewModelState.swift */; };
 		CB2106A026CD7D320054CF25 /* RickAndMortyWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB21069F26CD7D320054CF25 /* RickAndMortyWorldApp.swift */; };
-		CB2106A226CD7D320054CF25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106A126CD7D320054CF25 /* ContentView.swift */; };
+		CB2106A226CD7D320054CF25 /* EpisodesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106A126CD7D320054CF25 /* EpisodesListView.swift */; };
 		CB2106A426CD7D340054CF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2106A326CD7D340054CF25 /* Assets.xcassets */; };
 		CB2106A726CD7D340054CF25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2106A626CD7D340054CF25 /* Preview Assets.xcassets */; };
+		CB2106B726CD83BB0054CF25 /* EpisodesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106B626CD83BB0054CF25 /* EpisodesResult.swift */; };
+		CB2106B926CD83C20054CF25 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106B826CD83C20054CF25 /* Character.swift */; };
+		CB2106BE26CD8A4C0054CF25 /* URLRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106BD26CD8A4C0054CF25 /* URLRepository.swift */; };
+		CB2106C026CD8A960054CF25 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106BF26CD8A960054CF25 /* RequestType.swift */; };
+		CB2106C226CD8AA10054CF25 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106C126CD8AA10054CF25 /* APIService.swift */; };
+		CB2106C426CD8C000054CF25 /* EpisodesListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106C326CD8C000054CF25 /* EpisodesListAPI.swift */; };
+		CB2106C626CD8C220054CF25 /* EpisodesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106C526CD8C220054CF25 /* EpisodesListRequest.swift */; };
+		CB2106C826CD90130054CF25 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106C726CD90130054CF25 /* NetworkManager.swift */; };
+		CB2106CD26CD9DA50054CF25 /* EpisodesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2106CC26CD9DA50054CF25 /* EpisodesListViewModel.swift */; };
+		CB45F57626D451CD009E49F3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB45F57526D451CD009E49F3 /* NetworkError.swift */; };
+		CB6F272526CDB43E00ED588A /* EpisodesListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F272426CDB43E00ED588A /* EpisodesListRow.swift */; };
+		CB6F272926CDB4F500ED588A /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F272826CDB4F500ED588A /* EpisodeView.swift */; };
+		CB974A1226D2492400DE3E53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A1126D2492400DE3E53 /* Extensions.swift */; };
+		CB974A1426D24A9800DE3E53 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A1326D24A9800DE3E53 /* ViewModifiers.swift */; };
+		CB974A1626D24B6500DE3E53 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A1526D24B6500DE3E53 /* Constants.swift */; };
+		CB974A1A26D2514D00DE3E53 /* CharacterListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A1926D2514D00DE3E53 /* CharacterListRow.swift */; };
+		CB974A1E26D2AD2800DE3E53 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A1D26D2AD2800DE3E53 /* CharacterView.swift */; };
+		CB974A2126D2AD3700DE3E53 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A2026D2AD3700DE3E53 /* CharacterViewModel.swift */; };
+		CB974A2826D2CE6200DE3E53 /* SupportingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A2726D2CE6200DE3E53 /* SupportingViews.swift */; };
+		CB974A2A26D2CF7500DE3E53 /* LocationDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A2926D2CF7500DE3E53 /* LocationDataView.swift */; };
+		CB974A2D26D2D37100DE3E53 /* LocationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A2C26D2D37100DE3E53 /* LocationAPI.swift */; };
+		CB974A2F26D2D37800DE3E53 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A2E26D2D37800DE3E53 /* LocationRequest.swift */; };
+		CB974A3126D2DDA200DE3E53 /* ServiceAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A3026D2DDA200DE3E53 /* ServiceAPIType.swift */; };
+		CB974A3326D2DDED00DE3E53 /* MultipleItemsServiceAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A3226D2DDED00DE3E53 /* MultipleItemsServiceAPIType.swift */; };
+		CB974A3526D2DE3900DE3E53 /* MultipleCharactersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A3426D2DE3900DE3E53 /* MultipleCharactersAPI.swift */; };
+		CB974A3726D2DE7B00DE3E53 /* MultipleCharactersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A3626D2DE7B00DE3E53 /* MultipleCharactersRequest.swift */; };
+		CB974A3926D2DEE000DE3E53 /* MultipleEpisodesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A3826D2DEE000DE3E53 /* MultipleEpisodesAPI.swift */; };
+		CB974A3B26D2DEEC00DE3E53 /* MultipleEpisodesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A3A26D2DEEC00DE3E53 /* MultipleEpisodesRequest.swift */; };
+		CB974A4126D2E10800DE3E53 /* SingleItemServiceAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB974A4026D2E10800DE3E53 /* SingleItemServiceAPIType.swift */; };
+		CBD39EAB26CEEAA50019FCB4 /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD39EAA26CEEAA50019FCB4 /* EpisodeViewModel.swift */; };
+		CBD39EB126CEEC850019FCB4 /* ItemsListServiceAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD39EB026CEEC850019FCB4 /* ItemsListServiceAPIType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB0205AB26D53A65006874B1 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		CB0205AE26D56A0C006874B1 /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
 		CB21069C26CD7D320054CF25 /* RickAndMortyWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB21069F26CD7D320054CF25 /* RickAndMortyWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWorldApp.swift; sourceTree = "<group>"; };
-		CB2106A126CD7D320054CF25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB2106A126CD7D320054CF25 /* EpisodesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListView.swift; sourceTree = "<group>"; };
 		CB2106A326CD7D340054CF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB2106A626CD7D340054CF25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB2106A826CD7D340054CF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2106B626CD83BB0054CF25 /* EpisodesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesResult.swift; sourceTree = "<group>"; };
+		CB2106B826CD83C20054CF25 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		CB2106BD26CD8A4C0054CF25 /* URLRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRepository.swift; sourceTree = "<group>"; };
+		CB2106BF26CD8A960054CF25 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		CB2106C126CD8AA10054CF25 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CB2106C326CD8C000054CF25 /* EpisodesListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListAPI.swift; sourceTree = "<group>"; };
+		CB2106C526CD8C220054CF25 /* EpisodesListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListRequest.swift; sourceTree = "<group>"; };
+		CB2106C726CD90130054CF25 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CB2106CC26CD9DA50054CF25 /* EpisodesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListViewModel.swift; sourceTree = "<group>"; };
+		CB45F57526D451CD009E49F3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CB6F272426CDB43E00ED588A /* EpisodesListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListRow.swift; sourceTree = "<group>"; };
+		CB6F272826CDB4F500ED588A /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
+		CB974A1126D2492400DE3E53 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CB974A1326D24A9800DE3E53 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		CB974A1526D24B6500DE3E53 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB974A1926D2514D00DE3E53 /* CharacterListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRow.swift; sourceTree = "<group>"; };
+		CB974A1D26D2AD2800DE3E53 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		CB974A2026D2AD3700DE3E53 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		CB974A2726D2CE6200DE3E53 /* SupportingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingViews.swift; sourceTree = "<group>"; };
+		CB974A2926D2CF7500DE3E53 /* LocationDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataView.swift; sourceTree = "<group>"; };
+		CB974A2C26D2D37100DE3E53 /* LocationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAPI.swift; sourceTree = "<group>"; };
+		CB974A2E26D2D37800DE3E53 /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		CB974A3026D2DDA200DE3E53 /* ServiceAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPIType.swift; sourceTree = "<group>"; };
+		CB974A3226D2DDED00DE3E53 /* MultipleItemsServiceAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleItemsServiceAPIType.swift; sourceTree = "<group>"; };
+		CB974A3426D2DE3900DE3E53 /* MultipleCharactersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleCharactersAPI.swift; sourceTree = "<group>"; };
+		CB974A3626D2DE7B00DE3E53 /* MultipleCharactersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleCharactersRequest.swift; sourceTree = "<group>"; };
+		CB974A3826D2DEE000DE3E53 /* MultipleEpisodesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleEpisodesAPI.swift; sourceTree = "<group>"; };
+		CB974A3A26D2DEEC00DE3E53 /* MultipleEpisodesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleEpisodesRequest.swift; sourceTree = "<group>"; };
+		CB974A4026D2E10800DE3E53 /* SingleItemServiceAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemServiceAPIType.swift; sourceTree = "<group>"; };
+		CBD39EAA26CEEAA50019FCB4 /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		CBD39EB026CEEC850019FCB4 /* ItemsListServiceAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListServiceAPIType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB0205AD26D55B25006874B1 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				CB2106BF26CD8A960054CF25 /* RequestType.swift */,
+				CB2106C126CD8AA10054CF25 /* APIService.swift */,
+				CB2106C726CD90130054CF25 /* NetworkManager.swift */,
+				CB45F57526D451CD009E49F3 /* NetworkError.swift */,
+				CBD39EB026CEEC850019FCB4 /* ItemsListServiceAPIType.swift */,
+				CB974A3226D2DDED00DE3E53 /* MultipleItemsServiceAPIType.swift */,
+				CB974A4026D2E10800DE3E53 /* SingleItemServiceAPIType.swift */,
+				CB974A3026D2DDA200DE3E53 /* ServiceAPIType.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		CB21069326CD7D320054CF25 = {
 			isa = PBXGroup;
 			children = (
@@ -52,9 +133,12 @@
 		CB21069E26CD7D320054CF25 /* RickAndMortyWorld */ = {
 			isa = PBXGroup;
 			children = (
-				CB21069F26CD7D320054CF25 /* RickAndMortyWorldApp.swift */,
-				CB2106A126CD7D320054CF25 /* ContentView.swift */,
-				CB2106A326CD7D340054CF25 /* Assets.xcassets */,
+				CB2106B126CD818B0054CF25 /* Networking */,
+				CB2106AF26CD816D0054CF25 /* Models */,
+				CB2106AE26CD81660054CF25 /* Views */,
+				CB2106B226CD81A20054CF25 /* Utilities */,
+				CB2106B426CD81C20054CF25 /* Main */,
+				CB2106B326CD81A60054CF25 /* Resources */,
 				CB2106A826CD7D340054CF25 /* Info.plist */,
 				CB2106A526CD7D340054CF25 /* Preview Content */,
 			);
@@ -67,6 +151,181 @@
 				CB2106A626CD7D340054CF25 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB2106AE26CD81660054CF25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB6F272626CDB4AE00ED588A /* CharacterView */,
+				CB6F272726CDB4E700ED588A /* EpisodeView */,
+				CB2106B526CD81EB0054CF25 /* EpisodesListView */,
+				CB0205AB26D53A65006874B1 /* SearchBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB2106AF26CD816D0054CF25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB2106B626CD83BB0054CF25 /* EpisodesResult.swift */,
+				CB2106B826CD83C20054CF25 /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB2106B126CD818B0054CF25 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CB0205AD26D55B25006874B1 /* General */,
+				CB2106BC26CD8A420054CF25 /* Constants */,
+				CB974A2B26D2D35700DE3E53 /* LocationAPI */,
+				CB2106BB26CD8A1A0054CF25 /* CharactersListAPI */,
+				CB2106BA26CD8A0B0054CF25 /* EpisodesListAPI */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CB2106B226CD81A20054CF25 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CB974A1126D2492400DE3E53 /* Extensions.swift */,
+				CB974A1326D24A9800DE3E53 /* ViewModifiers.swift */,
+				CB974A1526D24B6500DE3E53 /* Constants.swift */,
+				CB974A2726D2CE6200DE3E53 /* SupportingViews.swift */,
+				CB0205AE26D56A0C006874B1 /* ViewModelState.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CB2106B326CD81A60054CF25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB2106A326CD7D340054CF25 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB2106B426CD81C20054CF25 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB21069F26CD7D320054CF25 /* RickAndMortyWorldApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CB2106B526CD81EB0054CF25 /* EpisodesListView */ = {
+			isa = PBXGroup;
+			children = (
+				CB6F272A26CDB5F700ED588A /* ViewModel */,
+				CB2106A126CD7D320054CF25 /* EpisodesListView.swift */,
+				CB6F272426CDB43E00ED588A /* EpisodesListRow.swift */,
+			);
+			path = EpisodesListView;
+			sourceTree = "<group>";
+		};
+		CB2106BA26CD8A0B0054CF25 /* EpisodesListAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CB974A3F26D2DF0F00DE3E53 /* Multiple */,
+				CB974A3E26D2DF0600DE3E53 /* FullList */,
+			);
+			path = EpisodesListAPI;
+			sourceTree = "<group>";
+		};
+		CB2106BB26CD8A1A0054CF25 /* CharactersListAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CB974A3D26D2DEF300DE3E53 /* Multiple */,
+			);
+			path = CharactersListAPI;
+			sourceTree = "<group>";
+		};
+		CB2106BC26CD8A420054CF25 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CB2106BD26CD8A4C0054CF25 /* URLRepository.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CB6F272626CDB4AE00ED588A /* CharacterView */ = {
+			isa = PBXGroup;
+			children = (
+				CB974A1F26D2AD2C00DE3E53 /* ViewModel */,
+				CB974A1D26D2AD2800DE3E53 /* CharacterView.swift */,
+				CB974A2926D2CF7500DE3E53 /* LocationDataView.swift */,
+			);
+			path = CharacterView;
+			sourceTree = "<group>";
+		};
+		CB6F272726CDB4E700ED588A /* EpisodeView */ = {
+			isa = PBXGroup;
+			children = (
+				CBD39EA926CEEA920019FCB4 /* ViewModel */,
+				CB6F272826CDB4F500ED588A /* EpisodeView.swift */,
+				CB974A1926D2514D00DE3E53 /* CharacterListRow.swift */,
+			);
+			path = EpisodeView;
+			sourceTree = "<group>";
+		};
+		CB6F272A26CDB5F700ED588A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB2106CC26CD9DA50054CF25 /* EpisodesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB974A1F26D2AD2C00DE3E53 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB974A2026D2AD3700DE3E53 /* CharacterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB974A2B26D2D35700DE3E53 /* LocationAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CB974A2C26D2D37100DE3E53 /* LocationAPI.swift */,
+				CB974A2E26D2D37800DE3E53 /* LocationRequest.swift */,
+			);
+			path = LocationAPI;
+			sourceTree = "<group>";
+		};
+		CB974A3D26D2DEF300DE3E53 /* Multiple */ = {
+			isa = PBXGroup;
+			children = (
+				CB974A3626D2DE7B00DE3E53 /* MultipleCharactersRequest.swift */,
+				CB974A3426D2DE3900DE3E53 /* MultipleCharactersAPI.swift */,
+			);
+			path = Multiple;
+			sourceTree = "<group>";
+		};
+		CB974A3E26D2DF0600DE3E53 /* FullList */ = {
+			isa = PBXGroup;
+			children = (
+				CB2106C526CD8C220054CF25 /* EpisodesListRequest.swift */,
+				CB2106C326CD8C000054CF25 /* EpisodesListAPI.swift */,
+			);
+			path = FullList;
+			sourceTree = "<group>";
+		};
+		CB974A3F26D2DF0F00DE3E53 /* Multiple */ = {
+			isa = PBXGroup;
+			children = (
+				CB974A3A26D2DEEC00DE3E53 /* MultipleEpisodesRequest.swift */,
+				CB974A3826D2DEE000DE3E53 /* MultipleEpisodesAPI.swift */,
+			);
+			path = Multiple;
+			sourceTree = "<group>";
+		};
+		CBD39EA926CEEA920019FCB4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBD39EAA26CEEAA50019FCB4 /* EpisodeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +397,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2106A226CD7D320054CF25 /* ContentView.swift in Sources */,
+				CB974A3126D2DDA200DE3E53 /* ServiceAPIType.swift in Sources */,
+				CB2106A226CD7D320054CF25 /* EpisodesListView.swift in Sources */,
+				CB974A2826D2CE6200DE3E53 /* SupportingViews.swift in Sources */,
+				CB974A2A26D2CF7500DE3E53 /* LocationDataView.swift in Sources */,
+				CB974A1226D2492400DE3E53 /* Extensions.swift in Sources */,
+				CB2106B726CD83BB0054CF25 /* EpisodesResult.swift in Sources */,
+				CB974A1426D24A9800DE3E53 /* ViewModifiers.swift in Sources */,
+				CB974A1E26D2AD2800DE3E53 /* CharacterView.swift in Sources */,
+				CBD39EAB26CEEAA50019FCB4 /* EpisodeViewModel.swift in Sources */,
+				CB45F57626D451CD009E49F3 /* NetworkError.swift in Sources */,
+				CB2106C826CD90130054CF25 /* NetworkManager.swift in Sources */,
+				CB974A2126D2AD3700DE3E53 /* CharacterViewModel.swift in Sources */,
+				CB974A3726D2DE7B00DE3E53 /* MultipleCharactersRequest.swift in Sources */,
+				CBD39EB126CEEC850019FCB4 /* ItemsListServiceAPIType.swift in Sources */,
+				CB974A2F26D2D37800DE3E53 /* LocationRequest.swift in Sources */,
+				CB6F272926CDB4F500ED588A /* EpisodeView.swift in Sources */,
+				CB2106C426CD8C000054CF25 /* EpisodesListAPI.swift in Sources */,
+				CB2106BE26CD8A4C0054CF25 /* URLRepository.swift in Sources */,
+				CB2106C626CD8C220054CF25 /* EpisodesListRequest.swift in Sources */,
 				CB2106A026CD7D320054CF25 /* RickAndMortyWorldApp.swift in Sources */,
+				CB974A3526D2DE3900DE3E53 /* MultipleCharactersAPI.swift in Sources */,
+				CB974A3926D2DEE000DE3E53 /* MultipleEpisodesAPI.swift in Sources */,
+				CB2106B926CD83C20054CF25 /* Character.swift in Sources */,
+				CB974A1626D24B6500DE3E53 /* Constants.swift in Sources */,
+				CB974A4126D2E10800DE3E53 /* SingleItemServiceAPIType.swift in Sources */,
+				CB0205AF26D56A0C006874B1 /* ViewModelState.swift in Sources */,
+				CB6F272526CDB43E00ED588A /* EpisodesListRow.swift in Sources */,
+				CB974A3326D2DDED00DE3E53 /* MultipleItemsServiceAPIType.swift in Sources */,
+				CB974A3B26D2DEEC00DE3E53 /* MultipleEpisodesRequest.swift in Sources */,
+				CB2106CD26CD9DA50054CF25 /* EpisodesListViewModel.swift in Sources */,
+				CB2106C026CD8A960054CF25 /* RequestType.swift in Sources */,
+				CB974A1A26D2514D00DE3E53 /* CharacterListRow.swift in Sources */,
+				CB2106C226CD8AA10054CF25 /* APIService.swift in Sources */,
+				CB0205AC26D53A65006874B1 /* SearchBarView.swift in Sources */,
+				CB974A2D26D2D37100DE3E53 /* LocationAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
